@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12px;
+}
+
+header {
+  background-color: #111111;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+header img {
+  height: 100px;
+  width: 100px;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 50px;
+}
+header nav button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 35px;
+  font-weight: 900;
+  border: none;
+}
+header nav ul {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: #111111;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px;
+  line-height: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  background-image: url("../img/Destaque_o20.png");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 617px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main h1 {
+  width: 267px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+main p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+main .laranja {
+  color: #E5A228;
+}
+main .azul {
+  color: #264DE4;
+}
+main .vermelho {
+  color: #E44D26;
+}
+
+#HTML5, #CSS3, #JS {
+  height: 467px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+#HTML5 img, #CSS3 img, #JS img {
+  width: 150px;
+}
+#HTML5 aside, #CSS3 aside, #JS aside {
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#HTML5 aside h2, #CSS3 aside h2, #JS aside h2 {
+  font-size: 2rem;
+}
+#HTML5 aside h3, #CSS3 aside h3, #JS aside h3 {
+  font-size: 1.7rem;
+  width: 350px;
+  text-align: center;
+}
+#HTML5 aside p, #CSS3 aside p, #JS aside p {
+  width: 92vw;
+  text-indent: 50px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+#links_uteis {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2666666667), rgba(0, 0, 0, 0.0941176471));
+  padding-bottom: 30px;
+}
+#links_uteis h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+#links_uteis h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 25px;
+}
+#links_uteis ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+#links_uteis ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+#links_uteis ul li img {
+  width: 45px;
+}
+#links_uteis ul li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #111111;
+  margin-left: 10px;
+  font-weight: 500;
+}
+#links_uteis ul li a:hover {
+  text-decoration: none;
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: #111111;
+  justify-content: space-around;
+}
+footer p {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+footer ul {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 80px;
+  }
+  header img {
+    height: 160px;
+    width: 160px;
+  }
+  header nav {
+    margin-right: 2vw;
+    height: 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav button {
+    display: none;
+  }
+  header nav ul {
+    width: 470px;
+    flex-direction: row;
+    visibility: visible;
+    justify-content: space-around;
+  }
+  header nav ul li a {
+    font-size: 1.5rem;
+  }
+  main {
+    height: 617px;
+    justify-content: normal;
+  }
+  main h1 {
+    width: 95vw;
+    text-align: center;
+    margin-bottom: 110px;
+    font-size: 7rem;
+    margin-top: 70px;
+  }
+  main p {
+    padding-bottom: 10px;
+    font-size: 4.5rem;
+  }
+  #HTML5, #CSS3, #JS {
+    height: 660px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #HTML5 img, #CSS3 img, #JS img {
+    width: 300px;
+    margin-right: 50px;
+  }
+  #HTML5 aside, #CSS3 aside, #JS aside {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #HTML5 aside h2, #CSS3 aside h2, #JS aside h2 {
+    font-size: 5rem;
+  }
+  #HTML5 aside h3, #CSS3 aside h3, #JS aside h3 {
+    font-size: 3rem;
+    width: 680px;
+  }
+  #HTML5 aside p, #CSS3 aside p, #JS aside p {
+    width: 690px;
+    font-size: 1.8rem;
+  }
+  #links_uteis {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+  }
+  #links_uteis h2 {
+    width: 98vw;
+    font-size: 3rem;
+    margin-top: 30px;
+  }
+  #links_uteis ul h3 {
+    margin-top: 0;
+  }
+  #links_uteis ul li {
+    margin-left: 0;
+    width: 191px;
+  }
+  footer {
+    height: 80px;
+    flex-direction: row;
+  }
+}
+#HTML5 {
+  background-color: #F16529;
+}
+
+#CSS3 {
+  background-color: #2965F1;
+}
+
+#JS {
+  background-color: #F1BF26;
+}/*# sourceMappingURL=style.css.map */

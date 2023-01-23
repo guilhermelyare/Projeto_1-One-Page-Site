@@ -1,0 +1,347 @@
+// Cores
+$htmlColor1: #E44D26;
+$htmlColor2: #F16529;
+$cssColor1: #264DE4;
+$cssColor2: #2965F1;
+$jsColor1: #E5A228;
+$jsColor2: #F1BF26;
+$bg_nav_bar: #111111;
+$white: #FFFFFF;
+
+// Reset CSS
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//first mobile
+html{
+    font-size: 12px;
+}
+
+header {
+    background-color: $bg_nav_bar;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50px;
+        button{
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            color: $white;
+            font-size: 35px;
+            font-weight: 900;
+            border: none;
+        }
+    
+        ul{
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            background-color: $bg_nav_bar;
+
+            li{
+                list-style: none;
+
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    padding: 10px;
+                    line-height: 30px;
+                    font-family: Arial, sans-serif;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+main {
+    background-image: url("../img/Destaque_o20.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 617px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        width: 267px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    p{
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .laranja{
+        color: $jsColor1;
+    }
+
+    .azul{
+        color: $cssColor1;
+    }
+
+    .vermelho{
+        color: $htmlColor1;
+    }
+}
+
+#HTML5, #CSS3, #JS {
+    height: 467px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+    img{
+        width: 150px;
+    }
+
+    aside {
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: 2rem;
+        }
+    
+        h3{
+            font-size: 1.7rem;
+            width: 350px;
+            text-align: center;
+        }
+    
+        p{
+            width: 92vw;
+            text-indent: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: justify;
+        }
+    }
+}
+
+#links_uteis{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #00000044, #00000018);
+    padding-bottom: 30px;
+
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 25px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 25px;
+            margin-top: 10px;
+
+            img{
+                width: 45px;
+            }
+
+            a{
+                text-decoration: none;
+                font-size: 1.4rem;
+                color: $bg_nav_bar;
+                margin-left: 10px;
+                font-weight: 500;
+            }
+
+            a:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: $bg_nav_bar;
+    justify-content: space-around;
+
+    p{
+        color: $white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    ul{
+        display: flex;
+        width: 500px;
+        justify-content: space-around;
+    }
+}
+
+
+@media (min-width: 768px){
+    header {
+        height: 80px;
+        img {
+            height: 160px;
+            width: 160px;
+        }
+        nav {
+            margin-right: 2vw;
+            height: 80px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            button {
+                display: none;
+            }
+    
+            ul {
+                width: 470px;
+                flex-direction: row;
+                visibility: visible;
+                justify-content: space-around;
+                li {
+                    
+                    a {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        height: 617px;
+        justify-content: normal;
+
+        h1{
+            width: 95vw;
+            text-align: center;
+            margin-bottom: 110px;
+            font-size: 7rem;
+            margin-top: 70px;
+        }
+
+        p{
+            padding-bottom: 10px;
+            font-size: 4.5rem;
+        }
+    }
+
+    #HTML5, #CSS3, #JS {
+        height: 660px;
+        flex-direction: row;
+        justify-content: center;
+    
+        img{
+            width: 300px;
+            margin-right: 50px;
+        }
+    
+        aside {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+                font-size: 5rem;
+            }
+        
+            h3{
+                font-size: 3rem;
+                width: 680px;
+            }
+        
+            p{
+                width: 690px;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    #links_uteis{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 500px;
+
+        h2{
+            width: 98vw;
+            font-size: 3rem;
+            margin-top: 30px;
+        }
+
+        ul{
+            h3{
+                margin-top: 0;
+            }
+            li{
+                margin-left: 0;
+                width: 191px;
+            }
+        }
+    }
+
+    footer{
+        height: 80px;
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+#HTML5 {
+    background-color: $htmlColor2;
+}
+
+#CSS3 {
+    background-color: $cssColor2;
+}
+
+#JS {
+    background-color: $jsColor2;
+}
